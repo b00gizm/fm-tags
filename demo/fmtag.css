@@ -1,0 +1,87 @@
+div.fmtag {
+  font-size: 0.8em;
+  border: 1px solid #BBBBBB;
+  padding: 5px;
+  cursor: text;
+}
+
+div.fmtag input[type=text] {
+  border: 0px;
+  outline: 0px;
+  width: 100px;
+}
+
+div.fmtag a.fmtag-tag {
+  position: relative;
+  display: block;
+  float: left;
+  margin-right: 3px;
+  padding-top: 2px;
+  padding-right: 19px;
+  padding-bottom: 2px;
+  padding-left: 3px;
+  cursor: pointer;  
+}
+
+div.fmtag a.fmtag-tag span.fmtag-remove {
+  background: url(delete.png);
+  position: absolute;
+  display: block;
+  top:3px;
+  right: 3px;
+  font-size: 0px;
+  width: 13px;
+  height: 13px;
+  text-indent: -1000em;
+  cursor: pointer;
+}
+
+div.fmtag-results {
+  display: none;
+  position: absolute;
+  font-size: 0.8em;
+  background-color: #FFFFFF;
+  border-left: 1px solid #DEDEDE;
+  border-right: 1px solid #DEDEDE;
+  border-bottom: 1px solid #DEDEDE;
+}
+
+div.fmtag-results ul {
+  margin-top: 3px;
+  margin-bottom: 3px;
+  padding-left: 0px;
+  list-style: none;
+  cursor: pointer;
+}
+
+div.fmtag-results ul li {
+  margin-left: 3px;
+  margin-right: 3px;
+  margin-bottom: 3px;
+}
+
+div.fmtag-results ul li a {
+  display: block;
+  color: #000000;
+  margin: 0px;
+  padding: 3px;
+  text-decoration: none;
+}
+
+div.fmtag-results ul li.selected {
+  color: #FFFFFF;
+  background-color: #0060E9;
+}
+
+div.fmtag-results ul li.selected a {
+  display: block;
+  color: #FFFFFF;
+  margin: 0px;
+  padding: 3px;
+  text-decoration: none;
+}
+
+div.fmtag-results ul li a:hover {
+  color: #FFFFFF;
+  background-color: #5297FF;
+}

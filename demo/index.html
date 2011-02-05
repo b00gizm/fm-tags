@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+    <title>fmtags - jQuery Plugin</title>
+    <link rel="stylesheet" href="fmtag.css" type="text/css" media="screen" title="no title" charset="utf-8">
+    
+    <script type="text/javascript" src="../lib/jquery-1.3.2.min.js"charset="utf-8"></script>
+    <script type="text/javascript" src="../src/jquery.fmtag.js"charset="utf-8"></script>
+    <script type="text/javascript" charset="utf-8">
+      
+      $(document).ready(function() {
+        
+        $('.tagger').fmtag({
+          
+          autocompleteData: ['github', 'awesome', 'jquery', 'iPhone', 'iPad', 'iPod'],
+          
+          onChange: function(tagList) {
+            // Do stuff ...
+          }
+        });
+        
+      });
+      
+    </script>
+    
+    <style type="text/css" media="screen">
+      
+      body {
+        font-family: "Helvetica";
+        font-size: 14px;
+        background-color: #dedede;
+      }
+      
+      .tagger {
+        background-color: #fff;
+      }
+      
+    </style>
+    
+  </head>
+  
+  <body>
+    
+    <div class="tagger"></div>
+    
+  </body>
+</html>
